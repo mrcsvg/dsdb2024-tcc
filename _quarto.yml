@@ -1,5 +1,6 @@
 project:
   title: "DSDB 2024 - Monografia"
+  output-dir: docs
 
 editor: visual
 
