@@ -1,0 +1,132 @@
+---
+title: "Otimização de Campanhas de E-mail: Identificando Características que Maximizam o Click-Through Rate (CTR)"
+subtitle: "Orientador: Prof. Dr. Wagner Bonat"
+
+author:
+  - name: Marcus V. G. Garcia
+    # email: coautor@exemplo.com
+format: 
+  revealjs:
+    theme: theme.scss
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+#    template-partials:
+ #     - title-slide.html
+---
+
+## Introdução
+
+#### Contexto - Marketing Digital \@ Latam Airlines
+
+::: topics
+::: small
+![](img/background.png){.absolute right="0" top="0px" width="300px"}
+
+-   Nossas responsabilidades:
+    -   Maximizar o retorno das campanhas pagas (ROAS - Return On Advertising Spend);
+    -   Garantir conversão de qualidade no topo do funil de vendas;
+    -   Personalização (Recomendadores, Cross-Selling, Ordenamento, Next Best Offer, Etc..)
+    -   Garantir rigor estatístico dos experimentos e campanhas;
+:::
+:::
+
+::: aside
+O avião da foto é o PR-XBG, que, por coincidência, [colidiu com outro avião em solo no dia 03/12](https://www.airway.com.br/dois-airbus-da-latam-se-chocam-no-solo-em-congonhas/).
+:::
+
+
+::: columns
+::: {.column .r-fit-text width="100%"}
+:::
+
+::: {.column width="0%"}
+:::
+:::
+
+## Introdução
+
+#### Desafio
+
+::: small
+-   Testar hipóteses de forma ágil e iterativa, assegurando o máximo rigor estatístico sem comprometer a rotina operacional das campanhas.
+:::
+
+#### Limitações dos métodos e ferramentas atuais
+
+::: limitations
+::: small
+-   Falta de transparência e rigor estatístico em ferramentas de mercado: Modelos "caixa preta" que dificultam a interpretação dos resultados e nem sempre são robustos.
+-   Alto custo e complexidade para testar múltiplas variantes: Este tipo de experimento torna-se caro e lento com o aumento de variantes.
+:::
+:::
+
+## Problema de Pesquisa
+
+<!-- Como podemos testar múltiplas configurações/características simultaneamente em experimentos digitais, de forma ágil e iterativa, mantendo o rigor estatístico?  -->
+
+Como determinar um conjunto de configurações/características candidatas a maximizar o Click-through Rate (CTR) em experimentos digitais com emails?
+
+#### Motivação
+
+::: goal
+Para um determinado experimento digital, como campanhas de e-mail, testar múltiplas configurações/características simultaneamente, utilizando métodos pouco explorados no meio digital.
+:::
+
+## Hipótese
+
+Se utilizarmos técnicas de regressão para analisar dados históricos de e-mails (como informações de envio, conteúdo e taxas de engajamento, etc.) e clientes (como contexto, histórico de interação, etc.), podemos identificar combinações de características que orientem experimentos mais eficazes para maximizar o CTR em campanhas de e-mail.
+
+## Objetivos
+
+### Geral
+
+::: goal
+Determinar um conjunto de configurações/características candidatas a maximizar o Click-through Rate (CTR) em experimentos digitais com emails.
+:::
+
+### Específicos
+
+-   Transformar conteúdo não estruturado de e-mails para geração de features enriquecidas.
+-   Utilizar mecanismos de regressão para entender comportamentos associados ao CTR.
+-   Desenhar um experimento utilizando superfície de resposta para validar hipóteses encontradas.
+
+...
+
+# Resultados esperados
+
+## Resultados Esperados
+
+-   **Identificação de características relevantes**: Determinar quais elementos dos e-mails (como título, imagens e chamadas para ação) e do público-alvo mais influenciam o CTR.
+
+-   **Melhoria na eficiência experimental**: Propor um conjunto de hipóteses fundamentadas para direcionar testes mais ágeis e precisos, reduzindo custos e tempo de experimentação.
+
+-   **Aumento no desempenho dos e-mails**: Demonstrar, por meio de resultados práticos, que as recomendações geradas podem melhorar as taxas de engajamento e o CTR dos e-mails.
+
+-   **Base para decisões estratégicas**: Oferecer insights baseados em dados que possam guiar a criação de e-mails mais eficazes e personalizados.
+
+## Cronograma
+
+```{mermaid}
+%%{init: { "gantt": {"barGap": 8, "barHeight": 30, "fontSize":16  }}}%%
+
+
+gantt
+    title Cronograma: Proposta inicial
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
+
+    
+    Revisão bibliográfica              :active, 2024-12-01, 2025-01-31
+    Apresentação Proposta              :milestone, 2024-12-05, 2024-12-05
+    Coleta e preparação dos dados      :, 2025-01-01, 2025-03-31
+    Análise exploratória               :, 2025-02-03, 2025-03-31
+    Modelagem                          :, 2025-03-15, 2025-04-30
+    
+    Documentação e produção da monografia     :, 2025-02-03, 2025-06-15
+    Finalização                         :, 2025-06-01, 2025-06-30
+
+
+```
+
+# Obrigado!
